@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<table>
+  <base>CRM/Superset</base>
+  <class>SupersetDashboard</class>
+  <name>civicrm_superset_dashboard</name>
+  <log>true</log>
+
+  <field>
+    <name>id</name>
+    <type>int unsigned</type>
+    <required>true</required>
+    <title>ID</title>
+    <comment>Unique SupersetDashboard ID</comment>
+    <html>
+      <type>Number</type>
+    </html>
+  </field>
+  <primaryKey>
+    <name>id</name>
+    <autoincrement>true</autoincrement>
+  </primaryKey>
+
+  <field>
+    <name>title</name>
+    <type>varchar(255)</type>
+    <required>false</required>
+    <title>Title</title>
+    <comment>Title of the dashboard as displayed to users</comment>
+    <html>
+      <type>Text</type>
+      <size>40</size>
+    </html>
+  </field>
+
+  <field>
+    <name>embed_id</name>
+    <type>varchar(50)</type>
+    <required>true</required>
+    <title>Embed ID</title>
+    <comment>External dashboard ID used to embed in applications</comment>
+    <html>
+      <type>Text</type>
+      <size>40</size>
+    </html>
+  </field>
+
+</table>
