@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<menu>
+  <item>
+    <path>civicrm/superset-dashboards</path>
+    <page_callback>CRM_Superset_Page_SupersetDashboards</page_callback>
+    <title>SupersetDashboards</title>
+    <access_arguments>list superset dashboards</access_arguments>
+  </item>
+</menu>
