@@ -59,3 +59,20 @@ function superset_civicrm_enable(): void {
 //  ]);
 //  _superset_civix_navigationMenu($menu);
 //}
+
+function superset_civicrm_permission(&$permissions): void {
+  $permissions['list superset dashboards'] = [
+    E::ts('Superset: List dashboards'),
+    E::ts('Superset: View a list of all dashboards'),
+  ];
+
+  $permissions['access all superset dashboards'] = [
+    E::ts('Superset: Access all dashboards'),
+    E::ts('Superset: Embed and display all Superset dashboards'),
+  ];
+
+  $permissions['administer superset dashboards'] = [
+    E::ts('Superset: Administer dashboards'),
+    E::ts('Superset: Create/update/delete Superset dashboards'),
+  ];
+}
