@@ -1,0 +1,90 @@
+div#superset_dashboard_list table {
+  border: none;
+
+  & thead tr {
+    border-bottom: 1px solid #d3dee2;
+
+    & th {
+      border: none;
+      background-color: #f3f6f7;
+      padding: 15px 10px;
+
+      &:first-child {
+        padding-left: 20px;
+      }
+    }
+  }
+
+
+  & tbody tr {
+    border-bottom: 1px solid #e8eef0;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    & td {
+      border: none;
+      background-color: white;
+      padding: 12px 10px;
+
+      &:first-child {
+        padding-left: 20px;
+      }
+    }
+  }
+}
+
+div#superset_dashboard_popup {
+  position: relative;
+
+  & dialog {
+    border: none;
+    box-shadow: 0px 3px 18px 0px rgba(48, 40, 40, 0.25);
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 100px);
+    overflow: hidden;
+    padding: 0px;
+    width: calc(100% - 100px);
+
+    & > div#popup_header {
+      align-items: center;
+      background-color: #f3f6f7;
+      border-bottom: 1px solid #d3dee2;
+      box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.1);
+      color: #464354;
+      display: flex;
+      font-size: 18px;
+      padding: 14px 20px;
+      z-index: 1;
+
+      & h1 {
+        flex-grow: 1;
+        font-size: 1em;
+        margin: 0px;
+      }
+
+      & button#close_popup {
+        background: none;
+        color: inherit;
+        font-size: 1em;
+        line-height: 1.33em;
+        padding: 0px;
+      }
+    }
+
+    & > div#popup_content {
+      flex-grow: 1;
+
+      & > iframe {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    &::backdrop {
+      background-color: rgba(170, 170, 170, 0.3);
+    }
+  }
+}
