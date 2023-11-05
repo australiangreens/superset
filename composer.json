@@ -1,0 +1,13 @@
+{
+  "name": "greenpeace-cee/superset",
+  "description": "CiviCRM extension to embed Superset dashboards",
+  "homepage": "https://github.com/australiangreens/superset",
+  "license": "AGPL-3.0-or-later",
+  "require": {
+    "composer/installers": "^1.6 || ^2"
+  },
+  "support": "https://github.com/australiangreens/civirfm/issues",
+  "type": "civicrm-ext",
+  "version": "1.0-alpha.1"
+  }
+
