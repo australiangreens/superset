@@ -23,7 +23,7 @@ window.onload = () => {
         filters: { expanded: false },
         hideTitle: true,
       },
-      fetchGuestToken,
+      fetchGuestToken: () => fetchGuestToken(),
       id: embedID,
       mountPoint: document.querySelector("div#superset_dashboard_popup dialog #popup_content"),
       supersetDomain: SUPERSET_BASE_URL,
