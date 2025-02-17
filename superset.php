@@ -62,17 +62,17 @@ function superset_civicrm_enable(): void {
 
 function superset_civicrm_permission(&$permissions): void {
   $permissions['list superset dashboards'] = [
-    E::ts('Superset: List dashboards'),
-    E::ts('Superset: View a list of all dashboards'),
+    'label' => E::ts('Superset: List dashboards'),
+    'description' => E::ts('Superset: View a list of all dashboards'),
   ];
 
   $permissions['access all superset dashboards'] = [
-    E::ts('Superset: Access all dashboards'),
-    E::ts('Superset: Embed and display all Superset dashboards'),
+    'label' => E::ts('Superset: Access all dashboards'),
+    'description' => E::ts('Superset: Embed and display all Superset dashboards'),
   ];
 
   $permissions['administer superset dashboards'] = [
-    E::ts('Superset: Administer dashboards'),
-    E::ts('Superset: Create/update/delete Superset dashboards'),
+    'label' => E::ts('Superset: Administer dashboards'),
+    'description' => E::ts('Superset: Create/update/delete Superset dashboards'),
   ];
 }
