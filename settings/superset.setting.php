@@ -15,6 +15,18 @@ return [
     'title'       => E::ts('Superset base URL'),
     'type'        => 'String',
   ],
+  'superset_api_url' => [
+    'add'         => '1.0',
+    'default'     => NULL,
+    'description' => 'API URL of the Superset instance for server-to-server connections. Falls back to superset_base_url if no value is provided.',
+    'help_text'   => 'API URL of the Superset instance for server-to-server connections. Falls back to superset_base_url if no value is provided.',
+    'html_type'   => 'text',
+    'is_contact'  => 0,
+    'is_domain'   => 1,
+    'name'        => 'superset_api_url',
+    'title'       => E::ts('Superset API URL'),
+    'type'        => 'String',
+  ],
   'superset_username' => [
     'add'         => '1.0',
     'default'     => NULL,

@@ -58,7 +58,7 @@ class SupersetGuestTokenAction extends Generic\BasicGetAction {
   private static function client() {
     if (empty(self::$http_client)) {
       self::$http_client = new GuzzleHttp\Client([
-        'base_uri' => Civi::settings()->get('superset_base_url') . "/api/v1/",
+        'base_uri' => (Civi::settings()->get('superset_api_url') ?? Civi::settings()->get('superset_base_url')) . "/api/v1/",
       ]);
     }
 
