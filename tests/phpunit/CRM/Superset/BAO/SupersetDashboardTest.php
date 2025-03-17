@@ -20,7 +20,7 @@ class CRM_Superset_BAO_SupersetDashboardTest
   public function setUpHeadless(): CiviEnvBuilder {
     return \Civi\Test::headless()
       ->installMe(__DIR__)
-      ->apply(TRUE);
+      ->apply();
   }
 
   public function setUp(): void {

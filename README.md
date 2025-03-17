@@ -1,8 +1,6 @@
 # superset
 
-![Screenshot](/images/screenshot.png)
-
-(*FIXME: In one or two paragraphs, describe what the extension does and why one would download it. *)
+[![Run unit tests](https://github.com/greenpeace-cee/superset/actions/workflows/unit-tests.yml/badge.svg)](https://github.com/greenpeace-cee/superset/actions/workflows/unit-tests.yml)
 
 The extension is licensed under [AGPL-3.0](LICENSE.txt).
 
