@@ -1,0 +1,8 @@
+<af-form ctrl="afform">
+  <af-entity type="SupersetDashboard" name="SupersetDashboard1" label="Superset Dashboard 1" actions="{create: true, update: true}" security="FBAC" url-autofill="1" />
+  <fieldset af-fieldset="SupersetDashboard1" class="af-container">
+    <af-field name="title" defn="{required: true, input_attrs: {}, help_pre: 'Human-readable title for the dashboard in CiviCRM'}" />
+    <af-field name="embed_id" defn="{help_pre: 'Obtain this value by opening a Dashboard in Superset and navigating to Hamburger menu > Embed dashboard', input_attrs: {}}" />
+  </fieldset>
+  <button class="af-button btn btn-primary" crm-icon="fa-check" ng-click="afform.submit()" ng-if="afform.showSubmitButton">Save</button>
+</af-form>
